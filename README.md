@@ -22,7 +22,7 @@ sudo apt-get upgrade
 sudo apt-get dist upgrade
 ```
 
-3. Enable the firewall so that it allows only **HTTP*,**NTP** and **SSH** connections.
+3. Enable the firewall so that it allows only **HTTP** ,**NTP** and **SSH** connections.
 
 - Enable ports *2200* and *123* in the Lightsail portal.
 
