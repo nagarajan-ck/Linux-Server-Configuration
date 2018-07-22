@@ -40,7 +40,15 @@ sudo ufw allow 22
 `sudo ufw enable`
 
 
-4. Change the default port of SSH to 2200 in the `/etc/ssh/sshd_config` file by editing line 5 to `Port 2200` and restart the SSH service
+4. Make changes to the SSH configuration file.
+
+- Change the default port of SSH to 2200 in the `/etc/ssh/sshd_config` file by editing line 5 to `Port 2200`.
+`Port 2200`
+
+- Change the value of PermitRootLogin to *no* to deny remote root access
+`PermitRootLogin no`
+
+- Restart the SSH service to put the changes into effect.
 `service ssh restart`
 
 - Also block any requests that come on port 22 by denying it on the firewall.
